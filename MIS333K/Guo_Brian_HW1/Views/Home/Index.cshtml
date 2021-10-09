@@ -1,0 +1,61 @@
+﻿@{ Layout = "~/Views/Shared/_Layout.cshtml";}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <h1 class="text-center">Brian Guo's Homepage</h1>
+
+        <h4 class="text-center">Here's me:</h4>
+        <div class="align-self-sm-center">
+            <img class="w-50 h-auto rounded mx-auto d-block" src="/images/selfie.jpg" alt="A selfie of Brian" title="A selfie of Brian" />
+        </div>
+        <br />
+
+        <hr class="hr-danger" />
+        <div class="align-self-sm-center">
+            <p>Feel free to contact me through email: <a href="mailto:guo.brian71@gmail.com?subject=Inquiry from Home Page">guo.brian71@gmail.com</a></p>
+        </div>
+        <br />
+        <br />
+        <h2 class="text-center">TED Talk</h2>
+        <p>Here's a TED Talk I found incredibly interesting. In his talk, Barry Schwartz discusses some of the suprising downsides of having more choices.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div style="max-width:854px">
+                        <div style="position:relative;height:0;padding-bottom:56.25%">
+                            <iframe src="https://embed.ted.com/talks/lang/en/barry_schwartz_the_paradox_of_choice" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-danger" />
+    <h3 class="text-center"> More Me:</h3>
+    <p></p>
+    <div class="text-center">
+        <div class="btn-group-lg">
+            <a class="btn btn-dark" asp-action="About">About Me</a>
+            <a class="btn btn-dark" asp-action="Hobbies">My Hobbies</a>
+            <a class="btn btn-dark" asp-action="ReturnAFile">My Resume</a>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+</html>

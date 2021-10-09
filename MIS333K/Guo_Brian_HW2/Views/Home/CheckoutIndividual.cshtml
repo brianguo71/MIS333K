@@ -1,0 +1,46 @@
+﻿@model Guo_Brian_HW2.Models.IndividualOrder
+
+@{
+    ViewData["Title"] = "CheckoutIndividual";
+}
+
+<h2>Individual Checkout</h2>
+<hr />
+<div class=" text-danger">@ViewBag.ErrorMessage</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="IndividualTotals">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CustomerName" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CustomerCode" class="control-label"></label>
+                <input asp-for="CustomerCode" class="form-control" />
+                <span asp-validation-for="CustomerCode" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="NumberOfSweatshirts" class="control-label"></label>
+                <input asp-for="NumberOfSweatshirts" class="form-control" />
+                <span asp-validation-for="NumberOfSweatshirts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfTshirts" class="control-label"></label>
+                <input asp-for="NumberOfTshirts" class="form-control" />
+                <span asp-validation-for="NumberOfTshirts" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Home</a>
+</div>
+
